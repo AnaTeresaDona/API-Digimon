@@ -15,7 +15,7 @@ function tabla(datos){
 
         `
         <tr>
-        <div class="card m-1" style="width: 15rem;"  onclick="agrandarImagen()" onmouseout="retornarImagen()" >
+        <div class="card m-1 tarjeta" style="width: 15rem;">
             <img src="${temp.img}" class="card-img-top imagen" alt="${temp.name}">
             <div class="card-body">
             <hr>
@@ -31,3 +31,6 @@ function tabla(datos){
     }
 }
 
+function toTop() {
+    window.scrollTo(0, 0)
+}
