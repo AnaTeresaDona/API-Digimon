@@ -1,4 +1,6 @@
 let contenido = document.querySelector("#contenido");
+// console.log(document.getElementsByClassName("tarjeta"));
+// console.log(document.querySelectorAll('.tarjeta'));
 
 
 fetch('https://digimon-api.vercel.app/api/digimon') 
@@ -6,6 +8,10 @@ fetch('https://digimon-api.vercel.app/api/digimon')
 .then(datos =>{
     tabla(datos);
 })
+
+.catch(function() {
+
+});
 
 function tabla(datos){
     contenido.innerHTML=""
@@ -15,7 +21,7 @@ function tabla(datos){
 
         `
         <tr>
-        <div class="card m-1 tarjeta" style="width: 15rem;">
+        <div class="card m-1 tarjeta" >
             <img src="${temp.img}" class="card-img-top imagen" alt="${temp.name}">
             <div class="card-body">
             <hr>
@@ -34,3 +40,20 @@ function tabla(datos){
 function toTop() {
     window.scrollTo(0, 0)
 }
+
+
+const photos = Array.from(document.getElementsByClassName("tarjeta"));
+
+const scalingImage = (currentPhoto => {
+  currentPhoto.classList.add("scaleImage");
+  
+  setTimeout(() => {
+    currentPhoto.classList.remove('scaleImage');
+  }, 4500);
+})
+
+photos.map((photo) => {
+  photo.addEventListener('click', Event => {
+    scalingImage(Event.target);
+  })
+});
