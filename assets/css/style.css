@@ -20,20 +20,3 @@ h5{
     width: 15rem;
 }
 
-
-.scaleImage {
-    animation: scaling-image-animation 5s ease;
-  }
-  
-  @keyframes scaling-image-animation {
-    0% {
-      transform: scale(0.5);
-      opacity: 0.8;
-    }
-    50% {
-      transform: scale(2);
-    }
-    100% {
-      transform: scale(2.5);
-    }
-  }
