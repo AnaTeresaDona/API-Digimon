@@ -1,5 +1,5 @@
 let contenido = document.querySelector("#contenido");
-console.log(document.getElementsByClassName("tarjeta"));
+// console.log(document.getElementsByClassName("tarjeta"));
 // console.log(document.querySelectorAll('.tarjeta'));
 
 
@@ -21,8 +21,8 @@ function tabla(datos){
 
         `
         <tr>
-        <div class="card m-1">
-            <img src="${temp.img}" class="card-img-top" alt="${temp.name}">
+        <div class="card m-1 tarjeta">
+            <img src="${temp.img}" class="card-img-top imagen" alt="${temp.name}">
             <div class="card-body">
             <hr>
             <ul class="list-group list-group-flush">
@@ -42,6 +42,6 @@ function toTop() {
 }
 
 // function detalle(){
-//     getElementById('imagen').style.transform= "scale(1.5)";
+//     getElementById('imagen').style.transform= "scaleY(1.5)";
 // }
 

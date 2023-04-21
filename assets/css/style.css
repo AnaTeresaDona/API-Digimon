@@ -20,3 +20,9 @@ h5{
     width: 15rem;
 }
 
+.tarjeta:hover{
+    scale: 1.2;
+    box-shadow: 10px 10px 8px #fffbb4;
+    border-color: #ffa738;
+    z-index: 1;
+}
