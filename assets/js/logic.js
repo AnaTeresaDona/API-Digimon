@@ -1,6 +1,4 @@
 let contenido = document.querySelector("#contenido");
-// console.log(document.getElementsByClassName("tarjeta"));
-// console.log(document.querySelectorAll('.tarjeta'));
 
 
 fetch('https://digimon-api.vercel.app/api/digimon') 
@@ -41,7 +39,4 @@ function toTop() {
     window.scrollTo(0, 0)
 }
 
-// function detalle(){
-//     getElementById('imagen').style.transform= "scaleY(1.5)";
-// }
 
